@@ -1,6 +1,7 @@
 var express = require('express')
 var app = express()
 var bodyParser = require('body-parser')
+var port = process.env.PORT || 3000
 
 app.use(bodyParser.urlencoded({
     extended: false
@@ -108,4 +109,4 @@ app.post('/add', (req, res) => {
 })
 
 
-app.listen(3000)
+app.listen(port)
