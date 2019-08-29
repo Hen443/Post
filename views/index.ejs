@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posts</title>
+</head>
+<body>
+    <% if(data.length == 0) { %>
+        <h2>Sorry but not find post</h2>
+    <% } %>
+    <% for(var i=0;i<data.length;i++) { %>
+        <h1><%= data[i].title %></h1>
+        <p><%= data[i].content %></p>
+        <hr>
+    <% } %>
+    <a href="/add">Add Post</a>
+    <a href="/register">Registration</a>
+    <a href="/login">Login</a>
+    <a href="/logout">Log Out</a>
+</body>
+</html>
