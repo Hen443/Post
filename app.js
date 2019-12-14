@@ -102,6 +102,7 @@ app.get('/logout', (req,res) =>{
 
 app.post('/add', (req, res) => {
     data.push({
+        id:data.length+1,
         title: req.body.title,
         content: req.body.content
     })
